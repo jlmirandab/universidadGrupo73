@@ -3,6 +3,7 @@ package Entidades;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.time.LocalDate;
 
 import javax.swing.JOptionPane;
 
@@ -12,13 +13,13 @@ public class Alumno {
     private int idAlumno;
     private int dni;
     private String apellido, nombre;
-    private String fechaNacimiento;
+    private LocalDate fechaNacimiento;
     private boolean estado;
 
     public Alumno() {
     }
 
-    public Alumno(int idAlumno, int dni, String apellido, String nombre, String fechaNacimiento, boolean estado) {
+    public Alumno(int idAlumno, int dni, String apellido, String nombre, LocalDate fechaNacimiento, boolean estado) {
         this.idAlumno = idAlumno;
         this.dni = dni;
         this.apellido = apellido;
@@ -29,7 +30,7 @@ public class Alumno {
     
     
 
-    public Alumno(int dni, String apellido, String nombre, String fechaNacimiento, boolean estado) {
+    public Alumno(int dni, String apellido, String nombre, LocalDate fechaNacimiento, boolean estado) {
         
         this.dni = dni;
         this.apellido = apellido;
@@ -38,6 +39,7 @@ public class Alumno {
         this.estado = estado;
     }
 
+   
     public int getIdAlumno() {
         return idAlumno;
     }
@@ -70,11 +72,11 @@ public class Alumno {
         this.nombre = nombre;
     }
 
-    public String getFechaNacimiento() {
+    public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(String fechaNacimiento) {
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 

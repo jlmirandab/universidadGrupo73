@@ -44,13 +44,14 @@ public class AlumnoData {
                 JOptionPane.showMessageDialog(null, "Alumno Agregado Exitosamente!");
                
             }
+            ps.close();
             
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "No se pudo acceder a la tabla alumno");
             
         }
         
-        
+       
     }
     
     
