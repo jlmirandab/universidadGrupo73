@@ -7,8 +7,8 @@ package AccesoADatos;
 
 /**
  *
- * @author 2022
+ * @author Win10
  */
-public class Alumno {
+public class MateriaData {
     
 }
