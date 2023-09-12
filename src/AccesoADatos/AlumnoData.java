@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 import javax.swing.JOptionPane;
         
 public class AlumnoData {
@@ -173,8 +174,6 @@ public class AlumnoData {
                 JOptionPane.showMessageDialog(null, "El alumno NO existe");
                 
             }
-            
-            
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Error al acceder a la tabla alumno"+ ex.getMessage());
             
@@ -182,7 +181,53 @@ public class AlumnoData {
         
         
     }
+    public void eliminarAlumnoPorId (int id){
+        
+       
+       
+        try {
+            String sql= "UPDATE alumno SET estado =0 WHERE idAlumno=?";
+            PreparedStatement ps= con.prepareStatement(sql);
+            ps.setInt(1, id);
+           
+            int fila= ps.executeUpdate();
+            
+            
+            if(fila==1){
+                JOptionPane.showMessageDialog(null, "Se elimino el alumno, ID: " + id);
+                
+            }
+            ps.close();
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al acceder a la tabla alumnos");
+        }
+        
+        
+    }
     
+    public void activarAlumnoPorId (int id){
+        
+       
+       
+        try {
+            String sql= "UPDATE alumno SET estado =1 WHERE idAlumno=?";
+            PreparedStatement ps= con.prepareStatement(sql);
+            ps.setInt(1, id);
+           
+            int fila= ps.executeUpdate();
+            
+            
+            if(fila==1){
+                JOptionPane.showMessageDialog(null, "Se cambió el estado del ID: " + id);
+                
+            }
+            ps.close();
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Error al acceder a la tabla alumnos");
+        }
+        
+        
+    }
     
     
     

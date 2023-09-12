@@ -4,10 +4,12 @@ package universidadGrupo73;
 import AccesoADatos.Conexion;
 import java.sql.Connection;
 import AccesoADatos.AlumnoData;
+import AccesoADatos.MateriaData;
 
 
 
 import Entidades.Alumno;
+import Entidades.Materia;
 import java.time.LocalDate;
 
 
@@ -26,7 +28,18 @@ public class universidadGrupo73 {
        
       //alum.guardarAlumno(alumno3);
        // alum.listarAlumnos();
-       alum.modificarAlumno(alumno1);
+       //alum.modificarAlumno(alumno1);
+       //alum.eliminarAlumnoPorId(4);
+       //alum.activarAlumnoPorId(4);
+      Materia materia1= new Materia("Lengua", 1, true);
+       Materia materia2= new Materia ("Matemática", 2, true);
+       Materia materia3= new Materia ("Estadística", 2, true);
+     
+     MateriaData mater= new MateriaData();
+//       
+      mater.guardarMateria(materia3);
+      
+       
     }
         
         
