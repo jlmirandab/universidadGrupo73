@@ -20,8 +20,12 @@ public class MateriaData {
         con = Conexion.getConexion();
     }
 
+    //hacer metodo buscarmateria que por paremetro nombre, año.
+    //y de ahi llamar al metodo guardar materia si no está
+    
+    
     public void guardarMateria(Materia materia) {
-
+        
         String sql1 = "SELECT COUNT (*) FROM materia WHERE nombre= ? AND año=? ";
         PreparedStatement ps= null;
         
@@ -29,19 +33,17 @@ public class MateriaData {
         try {
             ps = con.prepareStatement(sql1);
             ps.setString(1, "nombre");
-            ps.setInt(2, "año");
-            
-            
+
             ResultSet rs = ps.executeQuery();
             
-            int count = rs.getInt(sql1);
-            
-            if (count>0) {
+            //int count = rs.getInt(sql1);
+            rs.next();
+            if (rs.getInt(sql1)>0) {
                 
                 materia = new Materia();
                 materia.setNombre("nombre");
                 materia.setAño(rs.getInt("año"));
-
+                materia.setEstado(true);
                 JOptionPane.showMessageDialog(null, "La materia ya esta en la lista");
 
             } else {
@@ -71,10 +73,10 @@ public class MateriaData {
             }
         }catch (SQLException ex) {
 
-                    JOptionPane.showMessageDialog(null, "ERROR");
+                    JOptionPane.showMessageDialog(null, "ERROR"+ex);
 
     }
-
+       
     
 }
 }
