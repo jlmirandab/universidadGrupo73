@@ -31,13 +31,15 @@ public class universidadGrupo73 {
        //alum.modificarAlumno(alumno1);
        //alum.eliminarAlumnoPorId(4);
        //alum.activarAlumnoPorId(4);
-      Materia materia1= new Materia("Lengua", 1, true);
-       Materia materia2= new Materia ("Matemática", 2, true);
+       Materia materia1= new Materia("Lengua", 1, true);
+       Materia materia2= new Materia ("Matemática", 2, false);
        Materia materia3= new Materia ("Estadística", 2, true);
+       Materia materia4= new Materia ("Quimica", 1, true);
+       Materia materia5= new Materia("Algebra", 1, true);
      
-     MateriaData mater= new MateriaData();
+       MateriaData mater= new MateriaData();
 //       
-      mater.guardarMateria(materia3);
+       mater.guardarMateria(materia5);
       
        
     }
