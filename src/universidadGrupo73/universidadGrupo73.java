@@ -39,7 +39,7 @@ public class universidadGrupo73 {
      
        MateriaData mater= new MateriaData();
 //       
-       mater.guardarMateria(materia1);
+       mater.buscarMateria("Lengua", 1);
       
        
     }
