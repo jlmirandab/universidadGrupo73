@@ -2,30 +2,30 @@
 package Entidades;
 
 
-public class Incripcion {
+public class Inscripcion {
     
     private int idInscripcion;
     private double nota;
     private Alumno alumno;
     private Materia materia;
 
-    public Incripcion() {
+    public Inscripcion() {
     }
 
-    public Incripcion(double nota, Alumno alumno, Materia materia) {
+    public Inscripcion(double nota, Alumno alumno, Materia materia) {
         this.nota = nota;
         this.alumno = alumno;
         this.materia = materia;
     }
 
-    public Incripcion(int idInscripcion, double nota, Alumno alumno, Materia materia) {
+    public Inscripcion(int idInscripcion, double nota, Alumno alumno, Materia materia) {
         this.idInscripcion = idInscripcion;
         this.nota = nota;
         this.alumno = alumno;
         this.materia = materia;
     }
 
-    public Incripcion(double nota) {
+    public Inscripcion(double nota) {
         this.nota = nota;
     }
 
