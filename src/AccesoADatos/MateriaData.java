@@ -112,18 +112,25 @@ public class MateriaData {
         
         public void modificarMateria(Materia materia){
             
+
             String sql= "UPDATE materia SET nombre=?, año=?, estado=? WHERE idMateria=? ";
+
             PreparedStatement ps= null;
             
         try {
            ps= con.prepareStatement(sql);
            ps.setString(1, materia.getNombre());
            ps.setInt(2, materia.getAño());
+
            ps.setBoolean(3, materia.isEstado());
            ps.setInt(4, materia.getIdMateria());
            
+
+           ps.setBoolean(3, (true));
+          
+
            int exito=ps.executeUpdate();
-           
+            
            if(exito==1){
                JOptionPane.showMessageDialog(null, "Se modificó la materia");
                
@@ -133,6 +140,7 @@ public class MateriaData {
            
            
        } catch (SQLException ex) {
+           
            JOptionPane.showMessageDialog(null, "ERROR al acceder a la tabla materia"+ex.getMessage());
        }   
         }

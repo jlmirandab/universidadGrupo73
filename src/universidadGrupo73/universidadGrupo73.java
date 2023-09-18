@@ -39,6 +39,7 @@ public class universidadGrupo73 {
        Materia materia2= new Materia ("Matemática", 2, true);
        Materia materia3= new Materia (8,"Estadística", 2, true);
        Materia materia4= new Materia ("Quimica", 1, true);
+
        Materia materia5= new Materia("Fisica", 3, true);
        Materia materia6= new Materia(15,"Taller", 3, true);
        
@@ -74,6 +75,17 @@ public class universidadGrupo73 {
         //id.actualizarNota(8, 8, 7);
        
       
+
+
+//       Materia materia5= new Materia("Literatura", 3, true);
+//     
+//       MateriaData mater= new MateriaData();
+//       
+       //mater.buscarMateria("Lengua", 1);
+       //mater.guardarMateria(materia5);
+       mater.modificarMateria(materia5);
+       
+       
 
     }
         
