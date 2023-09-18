@@ -24,7 +24,7 @@ public class MateriaData {
     }
     
     public Materia buscarMateriaid (int idMateria){
-        Materia materia = null; 
+        Materia materia = null;
     String sql1 = "SELECT idMateria FROM materia WHERE idMateria=?";
     PreparedStatement ps = null;
     try {
@@ -36,7 +36,7 @@ public class MateriaData {
         if (rs.next()) {
             materia = new Materia();
             materia.setIdMateria(rs.getInt("idMateria"));
-            JOptionPane.showMessageDialog(null, "La materia ya está en la lista");
+            JOptionPane.showMessageDialog(null, "La materia está en la lista");
         } else {
             
             JOptionPane.showMessageDialog(null, "No se encontró la materia");

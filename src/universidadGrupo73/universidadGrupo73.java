@@ -41,7 +41,9 @@ public class universidadGrupo73 {
        Materia materia4= new Materia ("Quimica", 1, true);
        Materia materia5= new Materia("Fisica", 3, true);
        Materia materia6= new Materia(15,"Taller", 3, true);
-     
+       
+       
+       
        MateriaData mater= new MateriaData();
 //       
        //mater.buscarMateria("Lengua", 1);
@@ -51,17 +53,28 @@ public class universidadGrupo73 {
       //mater.activarMateria(4);
       //mater.listarMateria();
         InscripcionData id=new InscripcionData();
-      
-        Alumno Matias=alum.buscarAlumnoPorId(8);
-        Materia mate=mater.buscarMateriaid(8);
-        Inscripcion insc=new Inscripcion(9,Matias,mate);
-        
-        id.guardarInscripcion(insc);
-        
-        
         
       
+//       Alumno Matias=alum.buscarAlumnoPorId(5);
+//       Materia mate=mater.buscarMateriaid(4);
+//       Inscripcion insc=new Inscripcion(9,Matias, mate);
+       
+        
+        //id.guardarInscripcion(insc);
+        
+        for (Inscripcion inscripcion: id.obtenerInscripciones() ){
+            
+            System.out.println("id inscripción: " + inscripcion.getIdInscripcion());
+            System.out.println("Apellido: " + inscripcion.getAlumno().getApellido());
+            System.out.println("Materia: " + inscripcion.getMateria().getNombre());
+            
+        }
+       
+        
+        //id.actualizarNota(8, 8, 7);
+       
       
+
     }
         
         
