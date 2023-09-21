@@ -114,6 +114,7 @@ public class InscripcionData {
                 insc.setIdInscripcion(rs.getInt("idInscripto"));
                 Alumno alu= aludata.buscarAlumnoPorId(rs.getInt("idAlumno"));
                 Materia mat= materiadata.buscarMateriaid(rs.getInt("idMateria"));
+                
                 //los seteo
                 insc.setAlumno(alu);
                 insc.setMateria(mat);
@@ -129,6 +130,7 @@ public class InscripcionData {
         } catch (SQLException ex) {
            JOptionPane.showMessageDialog(null, "Error al acceder a la tabla inscripcion"); 
         }
+           
            
          return cursadas;  
            

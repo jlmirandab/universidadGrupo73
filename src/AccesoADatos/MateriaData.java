@@ -25,7 +25,7 @@ public class MateriaData {
     
     public Materia buscarMateriaid (int idMateria){
         Materia materia = null;
-    String sql1 = "SELECT idMateria FROM materia WHERE idMateria=?";
+    String sql1 = "SELECT idMateria, nombre, año, estado FROM materia WHERE idMateria=?";
     PreparedStatement ps = null;
     try {
         ps = con.prepareStatement(sql1);
@@ -36,7 +36,11 @@ public class MateriaData {
         if (rs.next()) {
             materia = new Materia();
             materia.setIdMateria(rs.getInt("idMateria"));
-            JOptionPane.showMessageDialog(null, "La materia está en la lista");
+            materia.setNombre(rs.getString("nombre"));
+            materia.setAño(rs.getInt("año"));
+            materia.setEstado(true);
+            
+            
         } else {
             
             JOptionPane.showMessageDialog(null, "No se encontró la materia");
@@ -47,6 +51,7 @@ public class MateriaData {
     } catch (SQLException ex) {
         JOptionPane.showMessageDialog(null, "ERROR en la consulta");
     } 
+        System.out.println(materia);
     return materia;
     
 
@@ -72,7 +77,7 @@ public class MateriaData {
             materia.setAño(rs.getInt("año"));
             materia.setEstado(true); 
             
-            JOptionPane.showMessageDialog(null, "La materia ya está en la lista");
+            
         } else {
             
             JOptionPane.showMessageDialog(null, "No se encontró la materia");
