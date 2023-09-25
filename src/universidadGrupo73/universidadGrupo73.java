@@ -41,17 +41,45 @@ public class universidadGrupo73 {
        //id.actualizarNota(8, 8, 10);
         //mater.modificarMateria(materia7);
        
-        for (Inscripcion inscripcion: id.obtenerInscripciones() ){
-            
-            System.out.println("id inscripción: " + inscripcion.getIdInscripcion());
-            System.out.println("Apellido: " + inscripcion.getAlumno().getApellido());
-            System.out.println("Materia: " + inscripcion.getMateria().getNombre());
-            
-        }
+//        for (Inscripcion inscripcion: id.obtenerInscripciones() ){
+//            
+//            System.out.println("id inscripción: " + inscripcion.getIdInscripcion());
+//            System.out.println("Apellido: " + inscripcion.getAlumno().getApellido());
+//            System.out.println("Materia: " + inscripcion.getMateria().getNombre());
+//            
+//        }
        
-        
+//        for (Inscripcion inscripcion: id.obtenerInscripcionesporAlumno(4)){
+////            
+////            System.out.println("id: "+inscripcion.getIdInscripcion());
+////            System.out.println("Apellido: " + inscripcion.getAlumno().getApellido());
+////            System.out.println("Materia :"+inscripcion.getMateria().getNombre()); 
+////        }
+//
+//    }
+//                for (Materia materias: id.obtenerMateriasCursadas(4)){
+//           
+//           System.out.println("id: "+ materias.getIdMateria());
+//           
+//            System.out.println("Materia :"+materias.getNombre());
+//       
+//        
+//    }
+//   for (Materia materias: id.obtenerMateriasNoCursadas(4)){
+////            
+////            System.out.println("id: "+ materias.getIdMateria());
+////            
+////            System.out.println("Materia :"+materias.getNombre());
+////    }
+        for (Alumno alumno: id.obtenerAlumnosXMateria(8)){
+            
+            System.out.println("id: "+alumno.getIdAlumno());
+            System.out.println("Nombre: "+alumno.getNombre());
+            System.out.println("Apellido: "+alumno.getApellido());
+            
 
     }
-        
-        
-    }
+}
+    
+}    
+    
