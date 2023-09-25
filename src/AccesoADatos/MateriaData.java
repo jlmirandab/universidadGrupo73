@@ -25,7 +25,11 @@ public class MateriaData {
     
     public Materia buscarMateriaid (int idMateria){
         Materia materia = null;
+<<<<<<< Updated upstream
     String sql1 = "SELECT idMateria, nombre, año, estado FROM materia WHERE idMateria=?";
+=======
+    String sql1 = "SELECT idMateria,nombre,año,estado FROM materia WHERE idMateria=?";
+>>>>>>> Stashed changes
     PreparedStatement ps = null;
     try {
         ps = con.prepareStatement(sql1);
@@ -39,8 +43,11 @@ public class MateriaData {
             materia.setNombre(rs.getString("nombre"));
             materia.setAño(rs.getInt("año"));
             materia.setEstado(true);
+<<<<<<< Updated upstream
             
             
+=======
+>>>>>>> Stashed changes
         } else {
             
             JOptionPane.showMessageDialog(null, "No se encontró la materia");
