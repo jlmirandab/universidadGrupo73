@@ -24,14 +24,14 @@ public class universidadGrupo73 {
         
         AlumnoData alum= new AlumnoData();
        
-<<<<<<< Updated upstream
+
         Materia materia1= new Materia("Lengua", 1, true);
         Materia materia2= new Materia ("Matemática", 2, true);
         Materia materia3= new Materia ("Estadística", 2, true);
         Materia materia4= new Materia ("Quimica", 1, true);
         Materia materia5= new Materia("Fisica", 3, true);
         Materia materia6= new Materia("Taller", 3, true);
-        Materia materia7= new Materia ("Lengua", 2, true);
+        
        
         MateriaData mater= new MateriaData();
         
@@ -42,30 +42,25 @@ public class universidadGrupo73 {
        //id.actualizarNota(8, 8, 10);
         //mater.modificarMateria(materia7);
        
-        for (Inscripcion inscripcion: id.obtenerInscripciones() ){
-            
-            System.out.println("id inscripción: " + inscripcion.getIdInscripcion());
-            System.out.println("Apellido: " + inscripcion.getAlumno().getApellido());
-            System.out.println("Materia: " + inscripcion.getMateria().getNombre());
-            
-        }
-=======
-
+//        for (Inscripcion inscripcion: id.obtenerInscripciones() ){
+//            
+//            System.out.println("id inscripción: " + inscripcion.getIdInscripcion());
+//            System.out.println("Apellido: " + inscripcion.getAlumno().getApellido());
+//            System.out.println("Materia: " + inscripcion.getMateria().getNombre());
+//            }
+               Materia materia7=new Materia("Literatura", 1, true);
+        Materia materia8= new Materia ("Estadística", 3, true);
+        Materia materia9= new Materia ("Matematica", 2, true);
+        Materia materia10= new Materia ("Matematica", 1, true);
         
-        Materia materia7=new Materia("Literatura", 1, true);
-       Materia materia8= new Materia ("Estadística", 3, true);
-       Materia materia9= new Materia ("Matematica", 2, true);
-       Materia materia10= new Materia ("Matematica", 1, true);
-        MateriaData mater= new MateriaData();
         //mater.guardarMateria(materia9);
         //mater.guardarMateria(materia10);
        
-        Inscripcion insc=new Inscripcion(7, alumno1, materia8);
-        InscripcionData id=new InscripcionData();
+
         
         //id.guardarInscripcion(insc);
         
->>>>>>> Stashed changes
+
        
        
 //        for (Inscripcion inscripcion: id.obtenerInscripciones() ){
@@ -77,16 +72,14 @@ public class universidadGrupo73 {
 //            
 //        }
        
-//               for (Inscripcion inscripcion: id.obtenerInscripcionesporAlumno(4)){
+//              for (Inscripcion inscripcion: id.obtenerInscripcionesporAlumno(4)){
 //            
 //            System.out.println("id: "+inscripcion.getIdInscripcion());
 //            System.out.println("Apellido: " + inscripcion.getAlumno().getApellido());
 //            System.out.println("Materia :"+inscripcion.getMateria().getNombre()); 
 //        }
         
-<<<<<<< Updated upstream
 
-=======
 //           for (Materia materias: id.obtenerMateriasCursadas(4)){
 //           
 //           System.out.println("id: "+ materias.getIdMateria());
@@ -100,12 +93,15 @@ public class universidadGrupo73 {
 //            System.out.println("Materia :"+materias.getNombre());
 //    }
         
-                    for (Alumno alumno: id.obtenerAlumnosXMateria(12)){
+                   for (Alumno alumno: id.obtenerAlumnosXMateria(12)){
             
             System.out.println("id: "+alumno.getIdAlumno());
+                       System.out.println("nombre: "+alumno.getNombre());
+                       System.out.println("apellido"+alumno.getApellido());
+                       System.out.println("dni"+alumno.getDni());
             
             
->>>>>>> Stashed changes
+
     }
 
 
