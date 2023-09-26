@@ -47,6 +47,7 @@ public class universidadGrupo73 {
 //            System.out.println("id inscripción: " + inscripcion.getIdInscripcion());
 //            System.out.println("Apellido: " + inscripcion.getAlumno().getApellido());
 //            System.out.println("Materia: " + inscripcion.getMateria().getNombre());
+<<<<<<< HEAD
 //            }
                Materia materia7=new Materia("Literatura", 1, true);
         Materia materia8= new Materia ("Estadística", 3, true);
@@ -60,6 +61,39 @@ public class universidadGrupo73 {
         
         //id.guardarInscripcion(insc);
         
+=======
+//            
+//        }
+       
+//        for (Inscripcion inscripcion: id.obtenerInscripcionesporAlumno(4)){
+////            
+////            System.out.println("id: "+inscripcion.getIdInscripcion());
+////            System.out.println("Apellido: " + inscripcion.getAlumno().getApellido());
+////            System.out.println("Materia :"+inscripcion.getMateria().getNombre()); 
+////        }
+//
+//    }
+//                for (Materia materias: id.obtenerMateriasCursadas(4)){
+//           
+//           System.out.println("id: "+ materias.getIdMateria());
+//           
+//            System.out.println("Materia :"+materias.getNombre());
+//       
+//        
+//    }
+//   for (Materia materias: id.obtenerMateriasNoCursadas(4)){
+////            
+////            System.out.println("id: "+ materias.getIdMateria());
+////            
+////            System.out.println("Materia :"+materias.getNombre());
+////    }
+        for (Alumno alumno: id.obtenerAlumnosXMateria(8)){
+            
+            System.out.println("id: "+alumno.getIdAlumno());
+            System.out.println("Nombre: "+alumno.getNombre());
+            System.out.println("Apellido: "+alumno.getApellido());
+            
+>>>>>>> 3c6bdc5c6cce214557bd284d99f1af6360949980
 
        
        
@@ -103,8 +137,15 @@ public class universidadGrupo73 {
             
 
     }
+<<<<<<< HEAD
 
 
 
     } 
 }
+=======
+}
+    
+}    
+    
+>>>>>>> 3c6bdc5c6cce214557bd284d99f1af6360949980
