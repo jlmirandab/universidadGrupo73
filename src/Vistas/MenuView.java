@@ -5,7 +5,10 @@
  */
 package Vistas;
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -34,6 +37,7 @@ public class MenuView extends javax.swing.JFrame {
 
         escritorio = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
+<<<<<<< Updated upstream
         menuAlumnos = new javax.swing.JMenu();
         menuFormularioAlumnos = new javax.swing.JMenuItem();
         menuMateria = new javax.swing.JMenu();
@@ -41,6 +45,17 @@ public class MenuView extends javax.swing.JFrame {
         menuAdministracion = new javax.swing.JMenu();
         menuConsulta = new javax.swing.JMenu();
         menuSalir = new javax.swing.JMenu();
+=======
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu7 = new javax.swing.JMenu();
+        jMenu8 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu9 = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu10 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+>>>>>>> Stashed changes
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,6 +65,7 @@ public class MenuView extends javax.swing.JFrame {
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 649, Short.MAX_VALUE)
         );
+<<<<<<< Updated upstream
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 550, Short.MAX_VALUE)
@@ -71,6 +87,49 @@ public class MenuView extends javax.swing.JFrame {
         menuAlumnos.add(menuFormularioAlumnos);
 
         jMenuBar1.add(menuAlumnos);
+=======
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+
+        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/alumno (1)_1.png"))); // NOI18N
+
+        jMenuItem1.setText("Formulario de Alumno");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(jMenu7);
+
+        jMenu8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/pila-de-libros-de-tres_1.png"))); // NOI18N
+
+        jMenuItem2.setText("Formulario de Materia");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu8.add(jMenuItem2);
+
+        jMenuBar1.add(jMenu8);
+
+        jMenu9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/archivo-de-base-de-datos_1.png"))); // NOI18N
+
+        jMenuItem3.setText("Formulario de Inscripción");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu9.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu9);
+>>>>>>> Stashed changes
 
         menuMateria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/libros.png"))); // NOI18N
         menuMateria.addActionListener(new java.awt.event.ActionListener() {
@@ -105,8 +164,14 @@ public class MenuView extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
+=======
+                .addContainerGap()
+                .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -118,6 +183,7 @@ public class MenuView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< Updated upstream
 
     private void menuFormularioAlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuFormularioAlumnosActionPerformed
        escritorio.removeAll();
@@ -156,6 +222,29 @@ public class MenuView extends javax.swing.JFrame {
     }//GEN-LAST:event_jmenuFormularioMateriaActionPerformed
 
 
+=======
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+       jDesktopPane1.removeAll();
+       jDesktopPane1.repaint();
+       FormularioAlumnoView alumno=new FormularioAlumnoView();
+       alumno.setVisible(true);
+       alumno.getContentPane().setBackground(Color.BLUE);
+       jDesktopPane1.add(alumno);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+       jDesktopPane1.removeAll();
+       jDesktopPane1.repaint();
+       FormularioAlumnoView alumno=new FormularioAlumnoView();
+       alumno.setVisible(true);
+       alumno.getContentPane().setBackground(Color.BLUE);
+       jDesktopPane1.add(alumno);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+       
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+>>>>>>> Stashed changes
 
     /**
      * @param args the command line arguments
@@ -199,6 +288,7 @@ public class MenuView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane escritorio;
     private javax.swing.JMenuBar jMenuBar1;
+<<<<<<< Updated upstream
     private javax.swing.JMenu menuAdministracion;
     private javax.swing.JMenu menuAlumnos;
     private javax.swing.JMenu menuConsulta;
@@ -206,5 +296,10 @@ public class MenuView extends javax.swing.JFrame {
     private javax.swing.JMenuItem menuFormularioMateriaa;
     private javax.swing.JMenu menuMateria;
     private javax.swing.JMenu menuSalir;
+=======
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+>>>>>>> Stashed changes
     // End of variables declaration//GEN-END:variables
 }

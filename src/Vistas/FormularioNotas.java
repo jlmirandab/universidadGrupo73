@@ -7,7 +7,11 @@ package Vistas;
 
 /**
  *
+<<<<<<< Updated upstream
  * @author Zanset
+=======
+ * @author Win10
+>>>>>>> Stashed changes
  */
 public class FormularioNotas extends javax.swing.JInternalFrame {
 
